@@ -84,6 +84,6 @@ class AnimalController extends Controller
     public function destroy(Animal $animal)
     {
         $animal->delete();
-        return redirect()->back()->with('status', 'Test deleted successfully.');
+        return  redirect('/animal');
     }
 }
